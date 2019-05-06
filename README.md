@@ -1,2 +1,2 @@
-# decisionRulesVisualization
+# ruleVisualization
 Visualization of decision rules
