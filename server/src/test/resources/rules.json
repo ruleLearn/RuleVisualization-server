@@ -2,15 +2,13 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "1",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 0
         },
         "characteristics": {
             "AConfirmation": 0.97853170189099,
@@ -32,20 +30,17 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "stringValue": "3.17",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3.17
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "1",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 0
         },
         "characteristics": {
             "AConfirmation": 0.027766116941529237,
@@ -67,15 +62,13 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.9369067222006974,
@@ -97,25 +90,21 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "stringValue": "15.48",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 15.48
             }, {
                 "name": "AttackSourceReputationScore",
                 "operator": ">=",
-                "stringValue": "0.93",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 0.93
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.0104047976011994,
@@ -137,30 +126,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": "<=",
-                "stringValue": "15.7",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 15.7
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }, {
                 "name": "MAQuality",
                 "operator": ">=",
-                "stringValue": "0.35",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 0.35
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.01566167178191009,
@@ -182,25 +166,21 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.09039882531261842,
@@ -222,30 +202,25 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "stringValue": "18.59",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 18.59
             }, {
                 "name": "AttackSourceReputationScore",
                 "operator": ">=",
-                "stringValue": "0.75",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 0.75
             }, {
                 "name": "MaxCVE",
                 "operator": ">=",
-                "stringValue": "8.2",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 8.2
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.002587698365350197,
@@ -267,15 +242,13 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.8922239285215692,
@@ -297,25 +270,21 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.10951918406993687,
@@ -337,25 +306,21 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": "<=",
-                "stringValue": "17.41",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 17.41
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.0140485312899106,
@@ -377,25 +342,21 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "stringValue": "25.45",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 25.45
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.03883250330958835,
@@ -417,15 +378,13 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "4",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 3
         },
         "characteristics": {
             "AConfirmation": 0.948324795173411,
@@ -447,20 +406,17 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "stringValue": "critical",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": "<=",
-            "stringValue": "4",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 3
         },
         "characteristics": {
             "AConfirmation": 0.011305954729397822,
@@ -482,20 +438,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "NA",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 0
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "5",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 4
         },
         "characteristics": {
             "AConfirmation": 0.863680817154448,
@@ -517,20 +470,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "NA",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 0
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "5",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 4
         },
         "characteristics": {
             "AConfirmation": 0.7735869178812655,
@@ -552,15 +502,13 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "NA",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 0
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "4",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 3
         },
         "characteristics": {
             "AConfirmation": 0.39800374298190894,
@@ -582,20 +530,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "4",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 3
         },
         "characteristics": {
             "AConfirmation": 0.8010719439290868,
@@ -617,20 +562,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": ">=",
-                "stringValue": "146.5",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 146.5
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "4",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 3
         },
         "characteristics": {
             "AConfirmation": 0.09692513368983957,
@@ -652,20 +594,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }, {
                 "name": "MaxCVE",
                 "operator": "<=",
-                "stringValue": "1.7",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1.7
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "4",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 3
         },
         "characteristics": {
             "AConfirmation": 0.053899588783309714,
@@ -687,25 +626,21 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }, {
                 "name": "TimeToDueDate",
                 "operator": ">=",
-                "stringValue": "63.7",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 63.7
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": ">=",
-                "stringValue": "36.02",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 36.02
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "4",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 3
         },
         "characteristics": {
             "AConfirmation": 0.07655502392344497,
@@ -727,15 +662,13 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.49741328426096315,
@@ -757,20 +690,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.6436575001221121,
@@ -792,20 +722,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.21928456230336038,
@@ -827,25 +754,21 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": ">=",
-                "stringValue": "99.77",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 99.77
             }, {
                 "name": "MAQuality",
                 "operator": "<=",
-                "stringValue": "0.6",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 0.6
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.14638556044289397,
@@ -867,25 +790,21 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }, {
                 "name": "TimeToDueDate",
                 "operator": ">=",
-                "stringValue": "39.56",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 39.56
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "3",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 2
         },
         "characteristics": {
             "AConfirmation": 0.13957993658739087,
@@ -907,15 +826,13 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "med",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 2
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.3999651328342163,
@@ -937,20 +854,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }, {
                 "name": "TimeToDueDate",
                 "operator": ">=",
-                "stringValue": "4.48",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 4.48
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.7498920086393088,
@@ -972,20 +886,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.46405430422709043,
@@ -1007,20 +918,17 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "stringValue": "high",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 3
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "stringValue": "low",
-                "x": "class org.rulelearn.data.AttributeType"
+                "value": 1
             }
         ],
         "decision": {
             "name": "Priority",
             "operator": ">=",
-            "stringValue": "2",
-            "x": "class org.rulelearn.data.AttributeType"
+            "value": 1
         },
         "characteristics": {
             "AConfirmation": 0.11951778551593424,

@@ -3,7 +3,10 @@ package org.rulevisualization.serializers;
 import java.lang.reflect.Type;
 
 import org.rulelearn.rules.Condition;
+import org.rulelearn.types.EnumerationField;
 import org.rulelearn.types.EvaluationField;
+import org.rulelearn.types.IntegerField;
+import org.rulelearn.types.RealField;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -17,7 +20,24 @@ public class ConditionSerializer implements JsonSerializer<Condition<? extends E
 		JsonObject json = new JsonObject();
 		json.addProperty("name", src.getAttributeWithContext().getAttributeName());
 		json.addProperty("operator", src.getRelationSymbol());
-		json.addProperty("stringValue", src.getLimitingEvaluation().toString());
+		
+		EvaluationField field = src.getLimitingEvaluation();
+		String str = field.toString();
+		
+		if (field instanceof IntegerField) {
+			json.addProperty("value", Integer.parseInt(str));
+		}
+		else if (field instanceof RealField) {
+			json.addProperty("value", Double.parseDouble(str));
+		}
+		else if (field instanceof EnumerationField) {
+			int index = ((EnumerationField) field).getValue();
+			json.addProperty("value", index);
+		}
+		else {
+			json.addProperty("value", str);
+		}
+		
 		return json;
 	}
 
