@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.util.Map;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -32,6 +33,12 @@ import com.google.gson.stream.JsonReader;
 
 @Path("upload")
 public class RulesResource {
+	@GET
+	@Produces({MediaType.TEXT_PLAIN})
+	public Response test() {
+		return Response.ok("Test OK.").build();
+	}
+	
 	@POST
     @Consumes({MediaType.MULTIPART_FORM_DATA})
 	@Produces({MediaType.APPLICATION_JSON})

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="./js/index.js"></script>
+</head>
+<body>        
+
+    <form>
+        Select file to upload:
+        <br><br>
+        <label>Attributes</label><br>
+        <input type="file" id="attributes" name='attributes'/> <br>
+        <label>Rules</label><br>
+        <input type="file" id="rules" name='rules'/> <br>
+    </form>
+    <br><button onclick="submit();">Submit</button>
+    <br>
+    <p id="response">Response</p>
+
+    <!-- <script>
+        var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+        })
+    </script> -->
+
+</body>
+</html>
