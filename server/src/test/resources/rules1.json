@@ -1,0 +1,64 @@
+[{
+        "conditions": [{
+                "name": "SourceAssetCriticality",
+                "operator": ">=",
+                "value": 4
+            }
+        ],
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 0
+                }
+            ]],
+        "characteristics": {
+            "AConfirmation": "UNKNOWN",
+            "C1Confirmation": "UNKNOWN",
+            "Confidence": 1.0,
+            "Coverage": "UNKNOWN",
+            "CoverageFactor": "UNKNOWN",
+            "Epsilon": "UNKNOWN",
+            "EpsilonPrime": "UNKNOWN",
+            "FConfirmation": "UNKNOWN",
+            "LConfirmation": "UNKNOWN",
+            "NegativeCoverage": "UNKNOWN",
+            "SConfirmation": "UNKNOWN",
+            "Strength": 0.19689119170984457,
+            "Support": "UNKNOWN",
+            "ZConfirmation": "UNKNOWN"
+        }
+    }, {
+        "conditions": [{
+                "name": "SourceAssetCriticality",
+                "operator": "<=",
+                "value": 2
+            }, {
+                "name": "TargetAssetCriticality",
+                "operator": "<=",
+                "value": 3
+            }
+        ],
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 2
+                }
+            ]],
+        "characteristics": {
+            "AConfirmation": "UNKNOWN",
+            "C1Confirmation": "UNKNOWN",
+            "Confidence": 1.0,
+            "Coverage": "UNKNOWN",
+            "CoverageFactor": "UNKNOWN",
+            "Epsilon": "UNKNOWN",
+            "EpsilonPrime": "UNKNOWN",
+            "FConfirmation": "UNKNOWN",
+            "LConfirmation": "UNKNOWN",
+            "NegativeCoverage": "UNKNOWN",
+            "SConfirmation": "UNKNOWN",
+            "Strength": 0.4905008635578584,
+            "Support": "UNKNOWN",
+            "ZConfirmation": "UNKNOWN"
+        }
+    }
+]

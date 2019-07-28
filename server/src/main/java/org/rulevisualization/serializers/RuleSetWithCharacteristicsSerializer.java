@@ -52,7 +52,7 @@ public class RuleSetWithCharacteristicsSerializer implements JsonSerializer<Rule
 		for (int i = 0; i < src.size(); i++) {
 			Rule rule = src.getRule(i);
 			Condition<EvaluationField>[] conditions = rule.getConditions();
-			Condition<EvaluationField> decision = rule.getDecision();
+			Condition<EvaluationField>[][] decisions = rule.getDecisions();
 			RuleCharacteristics characteristics = src.getRuleCharacteristics(i);
 			
 			JsonObject jsonRule = new JsonObject();
@@ -61,8 +61,19 @@ public class RuleSetWithCharacteristicsSerializer implements JsonSerializer<Rule
 				jsonConditions.add(conditionSerializer.serialize(conditions[j], null, null));
 			}
 			
+			JsonArray jsonDecisions = new JsonArray(decisions.length); 
+			for (int j = 0; j < decisions.length; j++) {
+				Condition<EvaluationField>[] ORdecision = decisions[j];
+				JsonArray jsonORdecision = new JsonArray(ORdecision.length);
+				for (int k = 0; k < ORdecision.length; k++) {
+					Condition<EvaluationField> condition = ORdecision[k];
+					jsonORdecision.add(conditionSerializer.serialize(condition, null, null));
+				}
+				jsonDecisions.add(jsonORdecision);
+			}			
+			
 			jsonRule.add("conditions", jsonConditions);
-			jsonRule.add("decision", conditionSerializer.serialize(decision, null, null));
+			jsonRule.add("decisions", jsonDecisions);
 			jsonRule.add("characteristics", characteristicsSerializer.serialize(characteristics, null, null));
 			
 			jsonRules.add(jsonRule);

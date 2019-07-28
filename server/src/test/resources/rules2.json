@@ -5,11 +5,12 @@
                 "value": 4
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 0
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 0
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.97853170189099,
             "C1Confirmation": 0.989265850945495,
@@ -37,11 +38,12 @@
                 "value": 3.17
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 0
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 0
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.027766116941529237,
             "C1Confirmation": 0.5138830584707647,
@@ -65,11 +67,12 @@
                 "value": 3
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.9369067222006974,
             "C1Confirmation": 0.9684533611003487,
@@ -101,11 +104,12 @@
                 "value": 0.93
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.0104047976011994,
             "C1Confirmation": 0.5052023988005997,
@@ -141,11 +145,12 @@
                 "value": 0.35
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.01566167178191009,
             "C1Confirmation": 0.507830835890955,
@@ -177,11 +182,12 @@
                 "value": 3
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.09039882531261842,
             "C1Confirmation": 0.5451994126563092,
@@ -217,11 +223,12 @@
                 "value": 8.2
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.002587698365350197,
             "C1Confirmation": 0.501293849182675,
@@ -245,11 +252,12 @@
                 "value": 2
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.8922239285215692,
             "C1Confirmation": 0.9461119642607846,
@@ -281,11 +289,12 @@
                 "value": 1
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.10951918406993687,
             "C1Confirmation": 0.5547595920349684,
@@ -317,11 +326,12 @@
                 "value": 17.41
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.0140485312899106,
             "C1Confirmation": 0.5070242656449553,
@@ -353,11 +363,12 @@
                 "value": 25.45
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.03883250330958835,
             "C1Confirmation": 0.5194162516547942,
@@ -381,11 +392,12 @@
                 "value": 1
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 3
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 3
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.948324795173411,
             "C1Confirmation": 0.9741623975867055,
@@ -413,11 +425,12 @@
                 "value": 4
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": "<=",
-            "value": 3
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": "<=",
+                    "value": 3
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.011305954729397822,
             "C1Confirmation": 0.5056529773646989,
@@ -445,11 +458,12 @@
                 "value": 3
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 4
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 4
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.863680817154448,
             "C1Confirmation": 0.931840408577224,
@@ -477,11 +491,12 @@
                 "value": 3
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 4
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 4
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.7735869178812655,
             "C1Confirmation": 0.8867934589406328,
@@ -505,11 +520,12 @@
                 "value": 0
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 3
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 3
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.39800374298190894,
             "C1Confirmation": 0.6990018714909545,
@@ -537,11 +553,12 @@
                 "value": 3
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 3
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 3
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.8010719439290868,
             "C1Confirmation": 0.9005359719645434,
@@ -569,11 +586,12 @@
                 "value": 146.5
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 3
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 3
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.09692513368983957,
             "C1Confirmation": 0.5484625668449198,
@@ -601,11 +619,12 @@
                 "value": 1.7
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 3
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 3
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.053899588783309714,
             "C1Confirmation": 0.5269497943916549,
@@ -637,11 +656,12 @@
                 "value": 36.02
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 3
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 3
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.07655502392344497,
             "C1Confirmation": 0.5382775119617225,
@@ -665,11 +685,12 @@
                 "value": 1
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.49741328426096315,
             "C1Confirmation": 0.7487066421304815,
@@ -697,11 +718,12 @@
                 "value": 3
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.6436575001221121,
             "C1Confirmation": 0.821828750061056,
@@ -729,11 +751,12 @@
                 "value": 1
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.21928456230336038,
             "C1Confirmation": 0.6096422811516802,
@@ -765,11 +788,12 @@
                 "value": 0.6
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.14638556044289397,
             "C1Confirmation": 0.5731927802214469,
@@ -801,11 +825,12 @@
                 "value": 2
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 2
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 2
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.13957993658739087,
             "C1Confirmation": 0.5697899682936954,
@@ -829,11 +854,12 @@
                 "value": 2
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.3999651328342163,
             "C1Confirmation": 0.6999825664171082,
@@ -861,11 +887,12 @@
                 "value": 4.48
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.7498920086393088,
             "C1Confirmation": 0.8749460043196544,
@@ -893,11 +920,12 @@
                 "value": 3
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.46405430422709043,
             "C1Confirmation": 0.7320271521135452,
@@ -925,11 +953,12 @@
                 "value": 1
             }
         ],
-        "decision": {
-            "name": "Priority",
-            "operator": ">=",
-            "value": 1
-        },
+        "decisions": [[{
+                    "name": "Priority",
+                    "operator": ">=",
+                    "value": 1
+                }
+            ]],
         "characteristics": {
             "AConfirmation": 0.11951778551593424,
             "C1Confirmation": 0.5597588927579671,
