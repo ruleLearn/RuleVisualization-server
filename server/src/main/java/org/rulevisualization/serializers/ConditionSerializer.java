@@ -37,6 +37,7 @@ public class ConditionSerializer implements JsonSerializer<Condition<? extends E
 		else {
 			json.addProperty("value", str);
 		}
+		json.addProperty("description", field.toString());
 		
 		return json;
 	}
