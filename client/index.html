@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/vue.js"></script>
+    <script src="./js/load.js"></script>
 </head>
-<body>        
-
-    <form>
-        Select file to upload:
-        <br><br>
-        <label>Attributes</label><br>
-        <input type="file" id="attributes" name='attributes'/> <br>
-        <label>Rules</label><br>
-        <input type="file" id="rules" name='rules'/> <br>
-    </form>
-    <br><button onclick="submit();">Submit</button>
-    <br>
-    <p id="response">Response</p>
-
-    <!-- <script>
-        var app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue!'
-        }
-        })
-    </script> -->
-
+<body>  
+    <div id="app" class="container">
+  
+        <div class="tabs">
+            <a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Load</a>
+            <a v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'active' : '' ]">Filter</a>
+            <a v-on:click="activetab=3" v-bind:class="[ activetab === 3 ? 'active' : '' ]">Table</a>
+            <a v-on:click="activetab=4" v-bind:class="[ activetab === 4 ? 'active' : '' ]">Visualization</a>
+        </div>
+    
+        <div class="content">
+            <div v-if="activetab === 1" class="tabcontent">
+                <form>
+                    Select files to upload:
+                    <div class="form-group">
+                        <input type="file" class="file" id="attributes" style="display: none;" @change="setAttributes">
+                        <div class="input-group col-xs-12">
+                            <button class="browse btn btn-secondary input-lg" type="button" @click="browseAttributes">Browse</button>
+                            <input id="attributesText" type="text" class="form-control input-lg" disabled placeholder="Upload attributes file in JSON format">
+                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" class="file" id="rules" style="display: none;" @change="setRules">
+                        <div class="input-group col-xs-12">
+                            <button class="browse btn btn-secondary input-lg" type="button" @click="browseRules">Browse</button>
+                            <input id="rulesText" type="text" class="form-control input-lg" disabled placeholder="Upload rules file in XML format">
+                        </div>
+                    </div>
+                </form>
+                <span>{{ loadMsg }}</span><br>
+                <br><button class="btn btn-primary" @click="submit">Submit</button>
+                <button class="btn btn-info" @click="loadDemo">Load demo</button>
+            </div>
+            <div v-if="activetab >= 2" class="tabcontent">
+                Filters
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 60%">Attribute / characteristic</th>
+                            <th style="width: 20%">Min value</th>
+                            <th style="width: 20%">Max value</th>
+                        </tr>
+                    </thead>
+                    <!-- <tbody><template>
+                        <rule-row v-for="attribute of attributes" v-bind:attribute="attribute" v-bind:key="attribute.id"></rule-row>
+                    </template></tbody> -->
+                </table>
+                <button class="btn btn-primary">Add</button>
+            </div>
+            <div v-if="activetab === 3" class="tabcontent">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">ID</th>
+                            <th style="width: 55%">Conditions</th>
+                            <th style="width: 30%">Decision</th>
+                            <th style="width: 10%">Measures</th>
+                        </tr>
+                    </thead>
+                    <tbody><template>
+                        <rule-row v-for="rule of rules" v-bind:rule="rule" v-bind:key="rule.id"></rule-row>
+                    </template></tbody>
+                </table>
+            </div>
+            <div v-if="activetab === 4" class="tabcontent">
+                Visualization
+            </div>
+        </div>
+      
+    </div> 
+    <script src="./js/index.js"></script>
 </body>
 </html>
+
+
