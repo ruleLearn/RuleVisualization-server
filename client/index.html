@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/vue.js"></script>
+    <script src="./js/vue-slider.min.js"></script>
     <script src="./js/load.js"></script>
+    <script src="./js/filter.js"></script>
 </head>
 <body>  
     <div id="app" class="container">
@@ -40,12 +43,12 @@
                 <br><button class="btn btn-primary" @click="submit">Submit</button>
                 <button class="btn btn-info" @click="loadDemo">Load demo</button>
             </div>
-            <div v-if="activetab >= 2" class="tabcontent">
+            <div v-if="activetab === 2" class="tabcontent">
                 Filters
                 <table class="table">
                     <thead>
                         <tr>
-                            <th style="width: 60%">Attribute / characteristic</th>
+                            <th style="width: 60%">Filter</th>
                             <th style="width: 20%">Min value</th>
                             <th style="width: 20%">Max value</th>
                         </tr>
@@ -53,6 +56,11 @@
                     <!-- <tbody><template>
                         <rule-row v-for="attribute of attributes" v-bind:attribute="attribute" v-bind:key="attribute.id"></rule-row>
                     </template></tbody> -->
+                    <tbody><template>
+                        <tr v-for="(value, name) in characteristics">
+                            <td><label>{{ name }}</label> <vue-slider v-model="value.range" :max="Math.max(1, value.range[1])" :min="0" :interval="Math.max(1, value.range[1]) / 100"> </td>
+                        </tr>
+                    </template></tbody>
                 </table>
                 <button class="btn btn-primary">Add</button>
             </div>

@@ -16,12 +16,16 @@
   .content {
       margin: 0px 10px;
   }
+
+  .range {
+      position: absolute;
+  }
   
   /* Style the tabs */
   .tabs {
       overflow: hidden;
       margin-left: 20px;
-      margin-bottom: -2px; // hide bottom border
+      margin-bottom: -2px; 
   }
   
   .tabs ul {

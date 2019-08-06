@@ -37,10 +37,14 @@ var app = new Vue({
         loadMsg: "",
         rules: [],
         attributes: [],
-        characteristics: []
+        characteristics: { },
+        value: [0,30]
     },
     methods: {
         browseAttributes, browseRules, setAttributes, setRules, submit, loadDemo
+    },
+    components: {
+        VueSlider: window['vue-slider-component']
     }
 });
 

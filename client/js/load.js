@@ -13,14 +13,25 @@ function loadAttributes() {
 }
 
 function loadCharacteristics() {
-    var unknown = 'UNKNOWN'; // must be the same identifier as in the rules XML file
-    for (rule of app.rules) {
-        for (name in rule.characteristics) {
-            value = rule.characteristics[name];
-            app.characteristics.n
-            app.characteristics[name].min = min(app.characteristics[name].min, value);
-        }
-    }
+  var unknown = 'UNKNOWN'; // must be the same identifier as in the rules XML file
+  for (rule of app.rules) {
+      for (name in rule.characteristics) {
+          value = rule.characteristics[name];
+          if (value == unknown)
+              continue;
+          else if (app.characteristics[name] == undefined) {
+              app.characteristics[name] = {range: [value, value]};
+          }
+          else {
+              app.characteristics[name].range[0] = Math.min(app.characteristics[name].range[0], value);
+              app.characteristics[name].range[1] = Math.max(app.characteristics[name].range[1], value);
+          }
+      }
+  }
+  var i = 1;
+  for (name in app.characteristics) {
+      app.characteristics[name].id = i; i += 1;
+  }
 }
 
 function receive(data) {
@@ -30,6 +41,7 @@ function receive(data) {
   app.rules = data;
   app.activetab = 2;
   app.loadMsg = 'Current file: ' + tmp_filename;
+  loadCharacteristics();
 }
 
 function browseAttributes() { document.getElementById('attributes').click(); }
@@ -79,6 +91,5 @@ function loadDemo() {
   fetch('/data/rules.json', {
     method: 'GET'
   }).then(response => response.json())
-  .then(receive); 
-  app.activetab = 2;
+  .then(receive);
 }
