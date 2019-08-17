@@ -70,7 +70,7 @@ public class RulesResource {
 		
 		RuleSetWithCharacteristicsSerializer serializer = new RuleSetWithCharacteristicsSerializer();
 		JsonElement json = serializer.serialize(rules.get(1), null, null);
-		return Response.ok(json.toString()).build();
+		return Response.ok(json.toString()).header("Access-Control-Allow-Origin", "*").build();
 	}
 
 }
