@@ -2,63 +2,68 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 0
+                    "value": 0,
+                    "description": "1"
                 }
             ]],
         "characteristics": {
-            "AConfirmation": "UNKNOWN",
-            "C1Confirmation": "UNKNOWN",
+            "AConfirmation": "undefined",
+            "C1Confirmation": "undefined",
             "Confidence": 1.0,
-            "Coverage": "UNKNOWN",
-            "CoverageFactor": "UNKNOWN",
-            "Epsilon": "UNKNOWN",
-            "EpsilonPrime": "UNKNOWN",
-            "FConfirmation": "UNKNOWN",
-            "LConfirmation": "UNKNOWN",
-            "NegativeCoverage": "UNKNOWN",
-            "SConfirmation": "UNKNOWN",
+            "Coverage": "undefined",
+            "CoverageFactor": "undefined",
+            "Epsilon": "undefined",
+            "EpsilonPrime": "undefined",
+            "FConfirmation": "undefined",
+            "LConfirmation": "undefined",
+            "NegativeCoverage": "undefined",
+            "SConfirmation": "undefined",
             "Strength": 0.19689119170984457,
-            "Support": "UNKNOWN",
-            "ZConfirmation": "UNKNOWN"
+            "Support": "undefined",
+            "ZConfirmation": "undefined"
         }
     }, {
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
-            "AConfirmation": "UNKNOWN",
-            "C1Confirmation": "UNKNOWN",
+            "AConfirmation": "undefined",
+            "C1Confirmation": "undefined",
             "Confidence": 1.0,
-            "Coverage": "UNKNOWN",
-            "CoverageFactor": "UNKNOWN",
-            "Epsilon": "UNKNOWN",
-            "EpsilonPrime": "UNKNOWN",
-            "FConfirmation": "UNKNOWN",
-            "LConfirmation": "UNKNOWN",
-            "NegativeCoverage": "UNKNOWN",
-            "SConfirmation": "UNKNOWN",
+            "Coverage": "undefined",
+            "CoverageFactor": "undefined",
+            "Epsilon": "undefined",
+            "EpsilonPrime": "undefined",
+            "FConfirmation": "undefined",
+            "LConfirmation": "undefined",
+            "NegativeCoverage": "undefined",
+            "SConfirmation": "undefined",
             "Strength": 0.4905008635578584,
-            "Support": "UNKNOWN",
-            "ZConfirmation": "UNKNOWN"
+            "Support": "undefined",
+            "ZConfirmation": "undefined"
         }
     }
 ]

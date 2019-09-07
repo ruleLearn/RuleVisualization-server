@@ -2,13 +2,15 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 0
+                    "value": 0,
+                    "description": "1"
                 }
             ]],
         "characteristics": {
@@ -20,7 +22,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.9956989247311828,
             "Strength": 0.19689119170984457,
@@ -31,17 +33,20 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "value": 3.17
+                "value": 3.17,
+                "description": "3.17"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 0
+                    "value": 0,
+                    "description": "1"
                 }
             ]],
         "characteristics": {
@@ -53,7 +58,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.8052173913043478,
             "Strength": 0.0069084628670120895,
@@ -64,13 +69,15 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -82,7 +89,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.9747191011235955,
             "Strength": 0.385146804835924,
@@ -93,21 +100,25 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "value": 15.48
+                "value": 15.48,
+                "description": "15.48"
             }, {
                 "name": "AttackSourceReputationScore",
                 "operator": ">=",
-                "value": 0.93
+                "value": 0.93,
+                "description": "0.93"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -119,7 +130,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.6034782608695652,
             "Strength": 0.0069084628670120895,
@@ -130,25 +141,30 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": "<=",
-                "value": 15.7
+                "value": 15.7,
+                "description": "15.7"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "MAQuality",
                 "operator": ">=",
-                "value": 0.35
+                "value": 0.35,
+                "description": "0.35"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -160,7 +176,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.6055846422338569,
             "Strength": 0.010362694300518135,
@@ -171,21 +187,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -197,7 +217,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.6355311355311355,
             "Strength": 0.05699481865284974,
@@ -208,25 +228,30 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "value": 18.59
+                "value": 18.59,
+                "description": "18.59"
             }, {
                 "name": "AttackSourceReputationScore",
                 "operator": ">=",
-                "value": 0.75
+                "value": 0.75,
+                "description": "0.75"
             }, {
                 "name": "MaxCVE",
                 "operator": ">=",
-                "value": 8.2
+                "value": 8.2,
+                "description": "8.2"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -238,7 +263,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.6003460207612457,
             "Strength": 0.0017271157167530224,
@@ -249,13 +274,15 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -267,7 +294,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.9352226720647774,
             "Strength": 0.5734024179620034,
@@ -278,21 +305,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -304,7 +335,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.4647887323943662,
             "Strength": 0.14162348877374784,
@@ -315,21 +346,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": "<=",
-                "value": 17.41
+                "value": 17.41,
+                "description": "17.41"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -341,7 +376,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.4074074074074074,
             "Strength": 0.02072538860103627,
@@ -352,21 +387,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "TimeToDueDate",
                 "operator": "<=",
-                "value": 25.45
+                "value": 25.45,
+                "description": "25.45"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -378,7 +417,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.42230347349177333,
             "Strength": 0.055267702936096716,
@@ -389,13 +428,15 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": ">=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 3
+                    "value": 3,
+                    "description": "4"
                 }
             ]],
         "characteristics": {
@@ -407,7 +448,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.9586776859504132,
             "Strength": 0.7910189982728842,
@@ -418,17 +459,20 @@
         "conditions": [{
                 "name": "TargetAssetCriticality",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": ">=",
-                "value": 4
+                "value": 4,
+                "description": "critical"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": "<=",
-                    "value": 3
+                    "value": 3,
+                    "description": "4"
                 }
             ]],
         "characteristics": {
@@ -440,7 +484,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.20938628158844766,
             "Strength": 0.04317789291882556,
@@ -451,17 +495,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 0
+                "value": 0,
+                "description": "NA"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 4
+                    "value": 4,
+                    "description": "5"
                 }
             ]],
         "characteristics": {
@@ -473,7 +520,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.9726890756302521,
             "Strength": 0.17789291882556132,
@@ -484,17 +531,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 0
+                "value": 0,
+                "description": "NA"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 4
+                    "value": 4,
+                    "description": "5"
                 }
             ]],
         "characteristics": {
@@ -506,7 +556,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.954639175257732,
             "Strength": 0.16234887737478412,
@@ -517,13 +567,15 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 0
+                "value": 0,
+                "description": "NA"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 3
+                    "value": 3,
+                    "description": "4"
                 }
             ]],
         "characteristics": {
@@ -535,7 +587,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.759825327510917,
             "Strength": 0.20898100172711573,
@@ -546,17 +598,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 3
+                    "value": 3,
+                    "description": "4"
                 }
             ]],
         "characteristics": {
@@ -568,7 +623,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.9206349206349206,
             "Strength": 0.3471502590673575,
@@ -579,17 +634,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": ">=",
-                "value": 146.5
+                "value": 146.5,
+                "description": "146.5"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 3
+                    "value": 3,
+                    "description": "4"
                 }
             ]],
         "characteristics": {
@@ -601,7 +659,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.6397058823529411,
             "Strength": 0.06044905008635579,
@@ -612,17 +670,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }, {
                 "name": "MaxCVE",
                 "operator": "<=",
-                "value": 1.7
+                "value": 1.7,
+                "description": "1.7"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 3
+                    "value": 3,
+                    "description": "4"
                 }
             ]],
         "characteristics": {
@@ -634,7 +695,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.6225402504472272,
             "Strength": 0.03454231433506045,
@@ -645,21 +706,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }, {
                 "name": "TimeToDueDate",
                 "operator": ">=",
-                "value": 63.7
+                "value": 63.7,
+                "description": "63.7"
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": ">=",
-                "value": 36.02
+                "value": 36.02,
+                "description": "36.02"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 3
+                    "value": 3,
+                    "description": "4"
                 }
             ]],
         "characteristics": {
@@ -671,7 +736,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.631578947368421,
             "Strength": 0.04835924006908463,
@@ -682,13 +747,15 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -700,7 +767,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.6987951807228916,
             "Strength": 0.4265975820379965,
@@ -711,17 +778,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -733,7 +803,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.7864406779661017,
             "Strength": 0.4905008635578584,
@@ -744,17 +814,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -766,7 +839,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.5321100917431193,
             "Strength": 0.2469775474956822,
@@ -777,21 +850,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "TimeFromDetectTime",
                 "operator": ">=",
-                "value": 99.77
+                "value": 99.77,
+                "description": "99.77"
             }, {
                 "name": "MAQuality",
                 "operator": "<=",
-                "value": 0.6
+                "value": 0.6,
+                "description": "0.6"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -803,7 +880,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.4884210526315789,
             "Strength": 0.17962003454231434,
@@ -814,21 +891,25 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }, {
                 "name": "TimeToDueDate",
                 "operator": ">=",
-                "value": 39.56
+                "value": 39.56,
+                "description": "39.56"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 2
+                    "value": 2,
+                    "description": "3"
                 }
             ]],
         "characteristics": {
@@ -840,7 +921,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.48434237995824636,
             "Strength": 0.17271157167530224,
@@ -851,13 +932,15 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 2
+                "value": 2,
+                "description": "med"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -869,7 +952,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.5201793721973094,
             "Strength": 0.614853195164076,
@@ -880,17 +963,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }, {
                 "name": "TimeToDueDate",
                 "operator": ">=",
-                "value": 4.48
+                "value": 4.48,
+                "description": "4.48"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -902,7 +988,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.8,
             "Strength": 0.7495682210708118,
@@ -913,17 +999,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }, {
                 "name": "SeverityForAttackCategory",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -935,7 +1024,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.5714285714285714,
             "Strength": 0.6493955094991365,
@@ -946,17 +1035,20 @@
         "conditions": [{
                 "name": "SourceAssetCriticality",
                 "operator": "<=",
-                "value": 3
+                "value": 3,
+                "description": "high"
             }, {
                 "name": "TargetAssetCriticality",
                 "operator": "<=",
-                "value": 1
+                "value": 1,
+                "description": "low"
             }
         ],
         "decisions": [[{
                     "name": "Priority",
                     "operator": ">=",
-                    "value": 1
+                    "value": 1,
+                    "description": "2"
                 }
             ]],
         "characteristics": {
@@ -968,7 +1060,7 @@
             "Epsilon": 0.0,
             "EpsilonPrime": 0.0,
             "FConfirmation": 1.0,
-            "LConfirmation": "UNKNOWN",
+            "LConfirmation": "undefined",
             "NegativeCoverage": 0,
             "SConfirmation": 0.29591836734693877,
             "Strength": 0.3229706390328152,
