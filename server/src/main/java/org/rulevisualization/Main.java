@@ -8,7 +8,7 @@ import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 public class Main {
-    public static final String BASE_URI = "http://localhost:8080/";
+    public static final String BASE_URI = "http://localhost:8081/";
     public static HttpServer startServer() {
         final ResourceConfig rc = new ResourceConfig().packages("org.rulevisualization");
         rc.register(MultiPartFeature.class);
