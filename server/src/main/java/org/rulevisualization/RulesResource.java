@@ -41,7 +41,7 @@ public class RulesResource {
 	@GET
 	@Produces({MediaType.TEXT_PLAIN})
 	public Response test() {
-		return Response.ok("Test OK.").build();
+		return Response.ok("Test OK.").header("Access-Control-Allow-Origin", "*").build();
 	}
 	
 	@POST
