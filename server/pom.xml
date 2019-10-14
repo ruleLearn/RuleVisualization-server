@@ -30,11 +30,6 @@
             <version>2.22.2</version>
         </dependency>
         <dependency>
-            <groupId>org.glassfish.jersey.ext</groupId>
-            <artifactId>jersey-declarative-linking</artifactId>
-            <version>2.22.2</version>
-        </dependency>
-        <dependency>
             <groupId>javax.el</groupId>
             <artifactId>javax.el-api</artifactId>
             <version>2.2.4</version>

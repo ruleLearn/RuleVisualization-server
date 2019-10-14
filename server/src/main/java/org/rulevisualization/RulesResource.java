@@ -41,7 +41,7 @@ public class RulesResource {
 	@GET
 	@Produces({MediaType.TEXT_PLAIN})
 	public Response test() {
-		return Response.ok("Test OK.").header("Access-Control-Allow-Origin", "*").build();
+		return Response.ok("Test OK.").build();
 	}
 	
 	@POST
@@ -95,7 +95,7 @@ public class RulesResource {
 		JsonObject json = new JsonObject();
 		json.add("rules", jsonRules);
 		json.add("examples", examples);
-		return Response.ok(json.toString()).header("Access-Control-Allow-Origin", "*").build();
+		return Response.ok(json.toString()).build();
 	}
 	
 	public InformationTable loadInformationTable(Attribute[] attributes, InputStream examplesStream) throws IOException, FileNotFoundException {
