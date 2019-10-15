@@ -7,19 +7,19 @@ import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 public class Main {
-    public static final String BASE_URI = "http://localhost:8081/";
-    public static HttpServer startServer() {
+    public static HttpServer startServer(String uri) {
         final ResourceConfig rc = new ResourceConfig().packages("org.rulevisualization");
         rc.register(MultiPartFeature.class);
         rc.register(CorsResponseFilter.class);
-        return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
+        return GrizzlyHttpServerFactory.createHttpServer(URI.create(uri), rc);
     }
 
     public static void main(String[] args) throws Exception {
-        final HttpServer server = startServer();
+    	String uri = "http://localhost:" +  (args.length > 0 ? args[0] : "8081") + "/";
+        final HttpServer server = startServer(uri);
         
         System.out.println(String.format("Restful service for parsing rules input files started with WADL available at "
-                + "%sapplication.wadl\nHit enter to stop it...", BASE_URI));
+                + "%sapplication.wadl\nHit enter to stop it...", uri));
         System.in.read();
         server.shutdownNow();
     }
