@@ -1,6 +1,8 @@
 package org.rulevisualization;
 
 import java.io.File;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Paths;
 
 import javax.ws.rs.GET;
@@ -16,9 +18,9 @@ import com.google.gson.JsonArray;
 public class DemoResource {	
 	@GET
 	@Produces({MediaType.APPLICATION_JSON})
-	public Response getList() {
-		String path = ClassLoader.getSystemClassLoader().getResource(".").getPath() + "data";
-		File folder = new File(path);
+	public Response getList() throws URISyntaxException {
+		URL url = ClassLoader.getSystemClassLoader().getResource(".");
+		File folder = new File(Paths.get(url.toURI()).toFile(), "data");
 		
 		JsonArray list = new JsonArray();
         for (final File f : folder.listFiles())
@@ -33,15 +35,13 @@ public class DemoResource {
 			@PathParam("demoname") String demoname,
 			@PathParam("filename") String filename
 	) {
-		java.nio.file.Path root = null, path = null;
-		File f = null;
+		File f = null, root = null;
 		try {
-			String strPath = ClassLoader.getSystemClassLoader().getResource(".").getPath() + "data";
-			root = Paths.get(new File(strPath).getCanonicalPath());
-			path = Paths.get(new File(strPath + "/" + demoname + "/" + filename).getCanonicalPath());
-			if (!path.startsWith(root))
+			URL url = ClassLoader.getSystemClassLoader().getResource(".");
+			root = new File(Paths.get(url.toURI()).toFile(), "data");
+			f = new File(new File(root, demoname), filename);
+			if (!f.getCanonicalPath().startsWith(root.getCanonicalPath()))
 				throw new Exception();
-			f = new File(path.toString());
 				
 		} catch (Exception e) {
 			throw new HttpException(404, "Demo dataset does not exist.");

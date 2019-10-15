@@ -1,6 +1,7 @@
 package org.rulevisualization;
 
 import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 /**
@@ -12,6 +13,6 @@ public class HttpException extends WebApplicationException {
         this(status, "");
     }
     public HttpException(int status, String message) {
-        super(message, (Throwable)null, Response.status(status).entity(message).build());
+        super(Response.status(status).entity(message).type(MediaType.TEXT_PLAIN).build());
     }
 }

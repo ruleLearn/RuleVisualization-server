@@ -54,7 +54,12 @@
 			<artifactId>rulelearn</artifactId>
 			<version>0.14.2</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/lib/ruleLearn-0.14.2.jar</systemPath>
+			<systemPath>${project.basedir}/lib/ruleLearn-0.14.2.jar</systemPath>
+		</dependency>
+		<dependency>
+		    <groupId>javax.activation</groupId>
+		    <artifactId>activation</artifactId>
+		    <version>1.1.1</version>
 		</dependency>
 		<dependency>
 		    <groupId>com.google.code.gson</groupId>
