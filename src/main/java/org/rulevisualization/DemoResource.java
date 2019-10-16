@@ -1,10 +1,9 @@
 package org.rulevisualization;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Paths;
-
+import java.net.URLDecoder;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -18,9 +17,11 @@ import com.google.gson.JsonArray;
 public class DemoResource {	
 	@GET
 	@Produces({MediaType.APPLICATION_JSON})
-	public Response getList() throws URISyntaxException {
-		URL url = ClassLoader.getSystemClassLoader().getResource(".");
-		File folder = new File(Paths.get(url.toURI()).toFile(), "data");
+	public Response getList() throws URISyntaxException, IOException {
+		String path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		String decodedPath = URLDecoder.decode(path, "UTF-8");
+		File folder = new File(decodedPath).getParentFile();
+		folder = new File(folder, "data");
 		
 		JsonArray list = new JsonArray();
         for (final File f : folder.listFiles())
@@ -37,8 +38,11 @@ public class DemoResource {
 	) {
 		File f = null, root = null;
 		try {
-			URL url = ClassLoader.getSystemClassLoader().getResource(".");
-			root = new File(Paths.get(url.toURI()).toFile(), "data");
+			String path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+			String decodedPath = URLDecoder.decode(path, "UTF-8");
+			root = new File(decodedPath).getParentFile();
+			root = new File(root, "data");
+			
 			f = new File(new File(root, demoname), filename);
 			if (!f.getCanonicalPath().startsWith(root.getCanonicalPath()))
 				throw new Exception();
