@@ -24,17 +24,22 @@ public class ConditionSerializer implements JsonSerializer<Condition<? extends E
 		EvaluationField field = src.getLimitingEvaluation();
 		String str = field.toString();
 		
-		if (field instanceof IntegerField) {
-			json.addProperty("value", Integer.parseInt(str));
-		}
-		else if (field instanceof RealField) {
-			json.addProperty("value", Double.parseDouble(str));
-		}
-		else if (field instanceof EnumerationField) {
-			int index = ((EnumerationField) field).getValue();
-			json.addProperty("value", index);
-		}
-		else {
+		try {
+			if (field instanceof IntegerField) {
+				json.addProperty("value", Integer.parseInt(str));
+			}
+			else if (field instanceof RealField) {
+				json.addProperty("value", Double.parseDouble(str));
+			}
+			else if (field instanceof EnumerationField) {
+				int index = ((EnumerationField) field).getValue();
+				json.addProperty("value", index);
+			}
+			else {
+				json.addProperty("value", str);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 			json.addProperty("value", str);
 		}
 		json.addProperty("description", field.toString());
