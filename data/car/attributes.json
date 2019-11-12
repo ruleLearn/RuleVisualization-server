@@ -1,0 +1,103 @@
+[
+  {
+    "name": "buying",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "vhigh",
+      "high",
+      "med",
+      "low"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "maint",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "vhigh",
+      "high",
+      "med",
+      "low"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "doors",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "2",
+      "3",
+      "4"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "persons",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "2",
+      "4",
+      "more"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "lug_boot",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "small",
+      "med",
+      "big"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "safety",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "low",
+      "med",
+      "high"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "class",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "decision",
+    "valueType": "enumeration",
+    "domain": [
+      "unacc",
+      "acc",
+      "good",
+      "vgood"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  }
+]

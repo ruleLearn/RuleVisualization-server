@@ -1,0 +1,3584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://deliberation.ruleml.org/1.01/relaxng/datalogplus_min_relaxed.rnc"?>
+<RuleML xmlns="http://ruleml.org/spec">
+<act index="1">
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>big</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>vgood</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="18"/>
+			<evaluation measure="Strength" value="0.013888888888888888"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.4"/>
+			<evaluation measure="Coverage" value="18"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.39154929577464787"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>more</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>vgood</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="12"/>
+			<evaluation measure="Strength" value="0.009259259259259259"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.26666666666666666"/>
+			<evaluation measure="Coverage" value="12"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.25981308411214954"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>vgood</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="12"/>
+			<evaluation measure="Strength" value="0.009259259259259259"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.26666666666666666"/>
+			<evaluation measure="Coverage" value="12"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.25981308411214954"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>big</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>vgood</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="24"/>
+			<evaluation measure="Strength" value="0.018518518518518517"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.5333333333333333"/>
+			<evaluation measure="Coverage" value="24"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.5245283018867924"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>more</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>vgood</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="16"/>
+			<evaluation measure="Strength" value="0.012345679012345678"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.35555555555555557"/>
+			<evaluation measure="Coverage" value="16"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.3475"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>vgood</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="16"/>
+			<evaluation measure="Strength" value="0.012345679012345678"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.35555555555555557"/>
+			<evaluation measure="Coverage" value="16"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.3475"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="34"/>
+			<evaluation measure="Strength" value="0.026234567901234566"/>
+			<evaluation measure="Confidence" value="0.9444444444444444"/>
+			<evaluation measure="CoverageFactor" value="0.3541666666666667"/>
+			<evaluation measure="Coverage" value="36"/>
+			<evaluation measure="NegativeCoverage" value="2"/>
+			<evaluation measure="EpsilonMeasure" value="0.0016666666666666668"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.020833333333333332"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.990632318501171"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.3357142857142857"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.94"/>
+			<evaluation measure="l-ConfirmationMeasure" value="5.358941988364472"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>more</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="16"/>
+			<evaluation measure="Strength" value="0.012345679012345678"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.16666666666666666"/>
+			<evaluation measure="Coverage" value="16"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.15625"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>big</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="24"/>
+			<evaluation measure="Strength" value="0.018518518518518517"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.25"/>
+			<evaluation measure="Coverage" value="24"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.2358490566037736"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="16"/>
+			<evaluation measure="Strength" value="0.012345679012345678"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.16666666666666666"/>
+			<evaluation measure="Coverage" value="16"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.15625"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="34"/>
+			<evaluation measure="Strength" value="0.026234567901234566"/>
+			<evaluation measure="Confidence" value="0.9444444444444444"/>
+			<evaluation measure="CoverageFactor" value="0.3541666666666667"/>
+			<evaluation measure="Coverage" value="36"/>
+			<evaluation measure="NegativeCoverage" value="2"/>
+			<evaluation measure="EpsilonMeasure" value="0.0016666666666666668"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.020833333333333332"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.990632318501171"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.3357142857142857"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.94"/>
+			<evaluation measure="l-ConfirmationMeasure" value="5.358941988364472"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>more</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="16"/>
+			<evaluation measure="Strength" value="0.012345679012345678"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.16666666666666666"/>
+			<evaluation measure="Coverage" value="16"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.15625"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>big</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="24"/>
+			<evaluation measure="Strength" value="0.018518518518518517"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.25"/>
+			<evaluation measure="Coverage" value="24"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.2358490566037736"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="16"/>
+			<evaluation measure="Strength" value="0.012345679012345678"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.16666666666666666"/>
+			<evaluation measure="Coverage" value="16"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.15625"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>low</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="102"/>
+			<evaluation measure="Strength" value="0.0787037037037037"/>
+			<evaluation measure="Confidence" value="0.9444444444444444"/>
+			<evaluation measure="CoverageFactor" value="0.2698412698412698"/>
+			<evaluation measure="Coverage" value="108"/>
+			<evaluation measure="NegativeCoverage" value="6"/>
+			<evaluation measure="EpsilonMeasure" value="0.006535947712418301"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.015873015873015872"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.9527027027027027"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.20346320346320346"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.9215686274509803"/>
+			<evaluation measure="l-ConfirmationMeasure" value="3.720516539057119"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="136"/>
+			<evaluation measure="Strength" value="0.10493827160493827"/>
+			<evaluation measure="Confidence" value="0.9444444444444444"/>
+			<evaluation measure="CoverageFactor" value="0.35978835978835977"/>
+			<evaluation measure="Coverage" value="144"/>
+			<evaluation measure="NegativeCoverage" value="8"/>
+			<evaluation measure="EpsilonMeasure" value="0.008714596949891068"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.021164021164021163"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.9527027027027027"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.27976190476190477"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.9215686274509803"/>
+			<evaluation measure="l-ConfirmationMeasure" value="3.720516539057119"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="136"/>
+			<evaluation measure="Strength" value="0.10493827160493827"/>
+			<evaluation measure="Confidence" value="0.9444444444444444"/>
+			<evaluation measure="CoverageFactor" value="0.35978835978835977"/>
+			<evaluation measure="Coverage" value="144"/>
+			<evaluation measure="NegativeCoverage" value="8"/>
+			<evaluation measure="EpsilonMeasure" value="0.008714596949891068"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.021164021164021163"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.9527027027027027"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.27976190476190477"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.9215686274509803"/>
+			<evaluation measure="l-ConfirmationMeasure" value="3.720516539057119"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="153"/>
+			<evaluation measure="Strength" value="0.11805555555555555"/>
+			<evaluation measure="Confidence" value="0.9444444444444444"/>
+			<evaluation measure="CoverageFactor" value="0.40476190476190477"/>
+			<evaluation measure="Coverage" value="162"/>
+			<evaluation measure="NegativeCoverage" value="9"/>
+			<evaluation measure="EpsilonMeasure" value="0.00980392156862745"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.023809523809523808"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.9527027027027027"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.3197278911564626"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.9215686274509803"/>
+			<evaluation measure="l-ConfirmationMeasure" value="3.720516539057119"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>more</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="64"/>
+			<evaluation measure="Strength" value="0.04938271604938271"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.1693121693121693"/>
+			<evaluation measure="Coverage" value="64"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.1261595547309833"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>more</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="64"/>
+			<evaluation measure="Strength" value="0.04938271604938271"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.1693121693121693"/>
+			<evaluation measure="Coverage" value="64"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.1261595547309833"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>more</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="72"/>
+			<evaluation measure="Strength" value="0.05555555555555555"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.19047619047619047"/>
+			<evaluation measure="Coverage" value="72"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.14285714285714285"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>big</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="96"/>
+			<evaluation measure="Strength" value="0.07407407407407407"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.25396825396825395"/>
+			<evaluation measure="Coverage" value="96"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.19428571428571428"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>big</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="96"/>
+			<evaluation measure="Strength" value="0.07407407407407407"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.25396825396825395"/>
+			<evaluation measure="Coverage" value="96"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.19428571428571428"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>big</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="108"/>
+			<evaluation measure="Strength" value="0.08333333333333333"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.2857142857142857"/>
+			<evaluation measure="Coverage" value="108"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.22077922077922077"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="64"/>
+			<evaluation measure="Strength" value="0.04938271604938271"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.1693121693121693"/>
+			<evaluation measure="Coverage" value="64"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.1261595547309833"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="64"/>
+			<evaluation measure="Strength" value="0.04938271604938271"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.1693121693121693"/>
+			<evaluation measure="Coverage" value="64"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.1261595547309833"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="72"/>
+			<evaluation measure="Strength" value="0.05555555555555555"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.19047619047619047"/>
+			<evaluation measure="Coverage" value="72"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.14285714285714285"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="136"/>
+			<evaluation measure="Strength" value="0.10493827160493827"/>
+			<evaluation measure="Confidence" value="0.9444444444444444"/>
+			<evaluation measure="CoverageFactor" value="0.35978835978835977"/>
+			<evaluation measure="Coverage" value="144"/>
+			<evaluation measure="NegativeCoverage" value="8"/>
+			<evaluation measure="EpsilonMeasure" value="0.008714596949891068"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.021164021164021163"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.9527027027027027"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.27976190476190477"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.9215686274509803"/>
+			<evaluation measure="l-ConfirmationMeasure" value="3.720516539057119"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>persons</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="432"/>
+			<evaluation measure="Strength" value="0.3333333333333333"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.47058823529411764"/>
+			<evaluation measure="Coverage" value="432"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.20588235294117646"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>low</ind>
+					<var>safety</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="432"/>
+			<evaluation measure="Strength" value="0.3333333333333333"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.47058823529411764"/>
+			<evaluation measure="Coverage" value="432"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.20588235294117646"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>vhigh</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="162"/>
+			<evaluation measure="Strength" value="0.125"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.17647058823529413"/>
+			<evaluation measure="Coverage" value="162"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.058823529411764705"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>vhigh</ind>
+					<var>maint</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="162"/>
+			<evaluation measure="Strength" value="0.125"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.17647058823529413"/>
+			<evaluation measure="Coverage" value="162"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.058823529411764705"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>vhigh</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="72"/>
+			<evaluation measure="Strength" value="0.05555555555555555"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.0784313725490196"/>
+			<evaluation measure="Coverage" value="72"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.02422145328719723"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>vhigh</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="48"/>
+			<evaluation measure="Strength" value="0.037037037037037035"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.05228758169934641"/>
+			<evaluation measure="Coverage" value="48"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.01583710407239819"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>vhigh</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="64"/>
+			<evaluation measure="Strength" value="0.04938271604938271"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.06971677559912855"/>
+			<evaluation measure="Coverage" value="64"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.0213903743315508"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="126"/>
+			<evaluation measure="Strength" value="0.09722222222222222"/>
+			<evaluation measure="Confidence" value="0.875"/>
+			<evaluation measure="CoverageFactor" value="0.13725490196078433"/>
+			<evaluation measure="Coverage" value="144"/>
+			<evaluation measure="NegativeCoverage" value="18"/>
+			<evaluation measure="EpsilonMeasure" value="0.047619047619047616"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0196078431372549"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.48484848484848486"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.029411764705882353"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.5714285714285714"/>
+			<evaluation measure="l-ConfirmationMeasure" value="1.0586069540544107"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="144"/>
+			<evaluation measure="Strength" value="0.1111111111111111"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.1568627450980392"/>
+			<evaluation measure="Coverage" value="144"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.051470588235294115"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="108"/>
+			<evaluation measure="Strength" value="0.08333333333333333"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.11764705882352941"/>
+			<evaluation measure="Coverage" value="108"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.0374331550802139"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="96"/>
+			<evaluation measure="Strength" value="0.07407407407407407"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.10457516339869281"/>
+			<evaluation measure="Coverage" value="96"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.03294117647058824"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="72"/>
+			<evaluation measure="Strength" value="0.05555555555555555"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.0784313725490196"/>
+			<evaluation measure="Coverage" value="72"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.02422145328719723"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="128"/>
+			<evaluation measure="Strength" value="0.09876543209876543"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.1394335511982571"/>
+			<evaluation measure="Coverage" value="128"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.045124899274778404"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>unacc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="96"/>
+			<evaluation measure="Strength" value="0.07407407407407407"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.10457516339869281"/>
+			<evaluation measure="Coverage" value="96"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.03294117647058824"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>buying</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="648"/>
+			<evaluation measure="Strength" value="0.5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.54"/>
+			<evaluation measure="Coverage" value="648"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.08"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>vhigh</ind>
+					<var>maint</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="324"/>
+			<evaluation measure="Strength" value="0.25"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.27"/>
+			<evaluation measure="Coverage" value="324"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.02666666666666667"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="486"/>
+			<evaluation measure="Strength" value="0.375"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.405"/>
+			<evaluation measure="Coverage" value="486"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.048"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="432"/>
+			<evaluation measure="Strength" value="0.3333333333333333"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.36"/>
+			<evaluation measure="Coverage" value="432"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.04"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="216"/>
+			<evaluation measure="Strength" value="0.16666666666666666"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.18"/>
+			<evaluation measure="Coverage" value="216"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.016"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="144"/>
+			<evaluation measure="Strength" value="0.1111111111111111"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.12"/>
+			<evaluation measure="Coverage" value="144"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.01"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>high</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="192"/>
+			<evaluation measure="Strength" value="0.14814814814814814"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.16"/>
+			<evaluation measure="Coverage" value="192"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.01391304347826087"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="288"/>
+			<evaluation measure="Strength" value="0.2222222222222222"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.24"/>
+			<evaluation measure="Coverage" value="288"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.022857142857142857"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="141"/>
+			<evaluation measure="Strength" value="0.1087962962962963"/>
+			<evaluation measure="Confidence" value="0.9791666666666666"/>
+			<evaluation measure="CoverageFactor" value="0.1175"/>
+			<evaluation measure="Coverage" value="144"/>
+			<evaluation measure="NegativeCoverage" value="3"/>
+			<evaluation measure="EpsilonMeasure" value="0.03125"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0025"/>
+			<evaluation measure="f-ConfirmationMeasure" value="0.5798319327731093"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.0071875"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="0.71875"/>
+			<evaluation measure="l-ConfirmationMeasure" value="1.324418957401803"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="243"/>
+			<evaluation measure="Strength" value="0.1875"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.2025"/>
+			<evaluation measure="Coverage" value="243"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.018461538461538463"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="192"/>
+			<evaluation measure="Strength" value="0.14814814814814814"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.16"/>
+			<evaluation measure="Coverage" value="192"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.01391304347826087"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="162"/>
+			<evaluation measure="Strength" value="0.125"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.135"/>
+			<evaluation measure="Coverage" value="162"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.011428571428571429"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="486"/>
+			<evaluation measure="Strength" value="0.375"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.405"/>
+			<evaluation measure="Coverage" value="486"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.048"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="256"/>
+			<evaluation measure="Strength" value="0.19753086419753085"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.21333333333333335"/>
+			<evaluation measure="Coverage" value="256"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.019692307692307693"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>buying</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>maint</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>acc</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="216"/>
+			<evaluation measure="Strength" value="0.16666666666666666"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.18"/>
+			<evaluation measure="Coverage" value="216"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.016"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>safety</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="864"/>
+			<evaluation measure="Strength" value="0.6666666666666666"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.6906474820143885"/>
+			<evaluation measure="Coverage" value="864"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.07194244604316546"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>small</ind>
+					<var>lug_boot</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="432"/>
+			<evaluation measure="Strength" value="0.3333333333333333"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.34532374100719426"/>
+			<evaluation measure="Coverage" value="432"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.017985611510791366"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="288"/>
+			<evaluation measure="Strength" value="0.2222222222222222"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.2302158273381295"/>
+			<evaluation measure="Coverage" value="288"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.010277492291880781"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>3</ind>
+					<var>doors</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>4</ind>
+					<var>persons</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>med</ind>
+					<var>lug_boot</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>good</ind>
+						<var>class</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="384"/>
+			<evaluation measure="Strength" value="0.2962962962962963"/>
+			<evaluation measure="Confidence" value="1.0"/>
+			<evaluation measure="CoverageFactor" value="0.3069544364508393"/>
+			<evaluation measure="Coverage" value="384"/>
+			<evaluation measure="NegativeCoverage" value="0"/>
+			<evaluation measure="EpsilonMeasure" value="0.0"/>
+			<evaluation measure="EpsilonPrimeMeasure" value="0.0"/>
+			<evaluation measure="f-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="A-ConfirmationMeasure" value="0.015145778114350625"/>
+			<evaluation measure="Z-ConfirmationMeasure" value="1.0"/>
+			<evaluation measure="l-ConfirmationMeasure" value="Infinity"/>
+		</evaluations>
+	</implies>
+</assert>
+</act>
+</RuleML>
