@@ -86,7 +86,7 @@ public class RulesResource {
 					if (ruleSet.getRule(i).covers(e, informationTable))
 						rules.add(i);
 				}
-				example.addProperty("id", new Integer(e));
+				example.addProperty("id", Integer.valueOf(e));
 				example.add("rules", rules);
 				examples.add(example);
 			}

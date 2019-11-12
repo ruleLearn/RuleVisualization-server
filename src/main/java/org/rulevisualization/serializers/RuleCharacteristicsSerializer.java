@@ -58,8 +58,23 @@ public class RuleCharacteristicsSerializer implements JsonSerializer<RuleCharact
 		else
 			json.addProperty("FConfirmation", undefined);
 
-		if (src.isLConfirmationSet())
-			json.addProperty("LConfirmation", src.getLConfirmation());
+		if (src.isLConfirmationSet()) {
+			if (src.getLConfirmation() == Double.POSITIVE_INFINITY) {
+				//Infinity is not a correct value in JSON, so a trick is applied to assign Double.MAX_VALUE instead.
+				//In practice, Double.MAX_VALUE will never be obtained. We have:
+				//a = getQuantityOfPositiveCoveredExamples();
+				//b = getQuantityOfPositiveNotCoveredExamples();
+				//c = getQuantityOfNegativeCoveredExamples();
+				//d = getQuantityOfNegativeNotCoveredExamples();
+				//lConfirmationMeasureValue = Math.log( (a / (a+b)) * ((c+d) / c) );
+				//So, the value under the logarithm is maximal if b=0 and c=1. Then, we have Math.log(1+d).
+				//To obtain value of natural logarithm equal to Double.MAX_VALUE == 1.7976931348623157E308,
+				//1+d would have to be enormous - equal to e^Double.MAX_VALUE. We will never analyze this amount of data!
+				json.addProperty("LConfirmation", Double.MAX_VALUE);
+			} else {
+				json.addProperty("LConfirmation", src.getLConfirmation());
+			}
+		}
 		else
 			json.addProperty("LConfirmation", undefined);
 
