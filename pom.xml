@@ -1,10 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org</groupId>
-  <artifactId>rulevisualization</artifactId>
-  <version>1.0</version>
-  <name>Rest service for visualization of decision rules</name>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.ruleLearn</groupId>
+    <artifactId>rulevisualization</artifactId>
+    <version>1.1.0</version>
+    <name>Rest service for visualization of decision rules</name>
   
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -45,6 +52,7 @@
             <plugin>
 	            <groupId>org.apache.maven.plugins</groupId>
 	            <artifactId>maven-shade-plugin</artifactId>
+	            <version>3.2.1</version>
 	            <configuration>
 	                <transformers>
 	                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
@@ -58,9 +66,9 @@
     </build>
     <dependencies>
 		<dependency>
-			<groupId>ruleLearn</groupId>
-			<artifactId>ruleLearn</artifactId>
-			<version>0.14.2</version>
+	    	<groupId>com.github.ruleLearn</groupId>
+	    	<artifactId>rulelearn</artifactId>
+	    	<version>0.14.3</version>
 		</dependency>
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
