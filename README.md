@@ -1,4 +1,4 @@
-# ruleVisualization
+# RuleVisualization-server (forked from [https://github.com/mateuszl1995/ruleVisualization](https://github.com/mateuszl1995/ruleVisualization))
 Server of visualization of decision rules.
 
 ### Application
