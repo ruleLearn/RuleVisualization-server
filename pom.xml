@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.ruleLearn</groupId>
     <artifactId>rulevisualization</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <name>Rest service for visualization of decision rules</name>
   
     <repositories>
@@ -68,7 +68,7 @@
 		<dependency>
 	    	<groupId>com.github.ruleLearn</groupId>
 	    	<artifactId>rulelearn</artifactId>
-	    	<version>0.14.3</version>
+	    	<version>0.15.0</version>
 		</dependency>
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
